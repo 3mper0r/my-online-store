@@ -1,0 +1,27 @@
+[
+    {
+        "id": 1,
+        "name": "beast-red-lines",
+        "src": "./src/assets/beastwear_beast-red-lines.png",
+        "price": 28 
+    },
+    {
+        "id": 2,
+        "name": "conquer",
+        "src": "./src/assets/beastwear_conquer.png",
+        "price": 28 
+    },
+    {
+        "id": 3,
+        "name": "howtobeast",
+        "src": "./src/assets/beastwear_howtobeast.png",
+        "price": 28 
+    },
+    {
+        "id": 4,
+        "name": "leg-day",
+        "src": "./src/assets/beastwear_leg-day.png",
+        "price": 28 
+    }
+]
+
