@@ -1,26 +1,41 @@
-import hoodies from '../data/db.json'
+import { Link } from 'react-router-dom';
+import data from '../data/db.json'
 
-interface Hoodie {
+export interface Hoodie {
     id: number;
     name: string;
-    src: string;
+    image?: string;
     price: number;
-  }
-  
+    
+}
 
-const Hoodies = () => {
+export interface Props {
+    hoodies: Hoodie[]
+}
+
+
+const Hoodies = ({hoodies}: Props) => {
+
     return (
-        <>
-        <ul>
-        {hoodies.map((hoodie : Hoodie) => (
-          <li key={hoodie.id}>
-            <img 
-            src={hoodie.src}
-            />
-          </li>         
-        ))}
-      </ul>
-      </>  
+        <section className='main'>
+            { data.map((hoodie  : Hoodie) => (
+                 
+                <article key={hoodie.id}>
+                    <div className='hoodies'>
+
+                        <h4>{hoodie.name}</h4>                      
+                        <img 
+                        src={hoodie.image}
+                        alt={hoodie.name}
+                        />
+                        <span className='price'>{hoodie.price}</span>
+                        <Link to={`/hoodies/${hoodie.id}`}>View Hoodie</Link>
+                    </div>
+                
+                </article>        
+                ))
+            }  
+        </section>
     )
 }
 

@@ -1,7 +1,5 @@
-import { createBrowserRouter, createRoutesFromElements, Link, Outlet, Route, Router, RouterProvider } from 'react-router-dom'
+import { Link, Router, RouterProvider } from 'react-router-dom'
 
-import Hoodies from '../pages/Hoodies'
-import Tanks from '../pages/Tanks'
 
 const Navbar = () => {
 
