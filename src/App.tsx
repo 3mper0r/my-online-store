@@ -1,7 +1,8 @@
 import { createBrowserRouter, createRoutesFromElements, Link, Outlet, Route, RouterProvider } from "react-router-dom"
+import HoodieCard, { Hoodie } from "./components/HoodieCard"
 import Navbar from "./components/Navbar"
 import Home from "./pages/Home"
-import SingleHoodie from "./pages/HoodieDetails"
+import HoodieDetails from "./pages/HoodieDetails"
 import Hoodies from "./pages/Hoodies"
 import Tanks from "./pages/Tanks"
 
@@ -19,7 +20,6 @@ const Root = () => {
   )
 }
 
-
 function App() {
  
   const router = createBrowserRouter(
@@ -27,7 +27,7 @@ function App() {
       <Route element={<Root/>}>
         <Route path="/" element={<Home />}/>
         <Route path="/hoodies" element={<Hoodies />}/>
-        <Route path="/hoodies/:id/" element={<SingleHoodie />}/>
+        <Route path="/hoodies/:id/" element={<HoodieDetails/>}/>
         <Route path="/top-tanks" element={<Tanks />}/>
       </Route> 
      

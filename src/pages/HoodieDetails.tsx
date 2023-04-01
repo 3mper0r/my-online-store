@@ -1,12 +1,8 @@
 import { Link, useParams } from "react-router-dom"
-import { Hoodie } from "../components/HoodieCard"
+
 import hoodies from "../data/hoodies.json"
 
-interface Props {
-  hoodie : Hoodie
-}
-
-const HoodieDetails = ({hoodie}: Props) => {
+const HoodieDetails = () => {
 
   const {id} = useParams()
 

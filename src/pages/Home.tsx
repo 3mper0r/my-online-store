@@ -1,6 +1,10 @@
+
+
+import WelcomeMessage from "../components/WelcomeMessage"
+
 const Home = () => {
     return (
-        <h1>this is home</h1>
+        <WelcomeMessage/>
     )
 }
 

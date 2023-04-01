@@ -12,15 +12,9 @@ img {
     width: 80%
 }
 
-li {
-    text-decoration: none;
-    list-style-type: none;
-}
-
 .single-hoodie {
     display: grid;
-    grid-template-columns: 50%;
-    
+    grid-template-columns: 50%;    
 }
 
 .main {
