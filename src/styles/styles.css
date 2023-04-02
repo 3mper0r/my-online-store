@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+
+.logo {
+    font-family: 'Cinzel Dekorativ', sans-serif;
+    font-weight: bolder;
+}
+
 #root {
     margin: 0;
     padding: 0;

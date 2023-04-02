@@ -1,7 +1,12 @@
 
 const WelcomeMessage = () => {
   return (
-    <p className="text-white bg-black p-4 flex justify-center">NEW HERE? Get 10% off everything! USE CODE: HelloBeastWear</p>
+    <>
+      <div className="text-center bg-black">
+      <span className="w-32 text-xl bg-white uppercase justify-center mt-6">NeW Here?</span> 
+      <p className="text-white p-4 grid justify-center">Get 10% off everything! USE CODE: HelloBeastWear</p>
+      </div>
+    </>
   )
 }
 
