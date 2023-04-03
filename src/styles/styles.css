@@ -1,36 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa+One&family=Permanent+Marker&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
-
 .logo {
-    font-family: 'Cinzel Dekorativ', sans-serif;
-    font-weight: bolder;
-}
-
-#root {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    font-family: 'Permanent Marker', cursive;
 }
 
 img {
     width: 80%
 }
 
-.single-hoodie {
+/* .single-hoodie {
     display: grid;
     grid-template-columns: 50%;    
-}
+} */
 
-.main {
+/* .main {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(350px
     , 1fr))
-}
-
+} */
 
 .price {
     display: block;
